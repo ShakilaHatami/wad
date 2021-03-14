@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div id="content">
+        <div class="header">
+            <img src="./img/companyLogo.jpg" width="100px"  />
+            <span class="header-text">COMPANY NAME</span>
+        </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Register</a>
+          <a href="#">Contact</a>
+        </nav>
+            <h1>Registration form</h1>
+<!--            TODO 1
+Change the form so that it is processed by our new servlet.
+-->
+            <form method="post" name="registerForm" action="RegistrationController">
+              <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" size="40">
+                </div>
+                <div class="form-element">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-element">
+                    <label for="rPassword">Repeat password</label>
+                    <input type="password" id="rPassword">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-element">
+                    <p>Gender</p>
+                    <label for="male">Male</label><input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Female</label><input type="radio" name="gender" value="female" id="female">
+                </div>
+                <div class="form-element">
+                    <label for="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div class="form-element">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option>Romania</option>
+                        <option>Italy</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                    </select>
+                </div>
+                <div class="form-element">
+                    <label for="maillist">Subscribe to maillist</label>
+                    <input type="checkbox" name="maillist" id="maillist">
+                </div> 
+                  <div class="form-element">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
